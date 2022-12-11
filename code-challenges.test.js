@@ -36,7 +36,7 @@ const object3 = { number: -7 }
 // Expected output: "-7 is not divisible by three"
 
 describe("divisibleByThree", () => {
-    it("takes a object as an argument and decides if the number inside it is evenly divisible by three or not", () => {
+    it("takes an object as an argument and decides if the number inside it is evenly divisible by three or not", () => {
         expect(divisibleByThree(object1)).toEqual("15 is divisible by three")
         expect(divisibleByThree(object2)).toEqual("0 is divisible by three")
         expect(divisibleByThree(object3)).toEqual("-7 is not divisible by three")
@@ -133,7 +133,7 @@ describe("firstVowelIndex", () => {
 // If the value is a vowel, return the index number
 
 const firstVowelIndex = (string) => {
-    for (let i = 0; i < string.length; i ++) {
+    for (let i = 0; i < string.length; i++) {
         if (string.charAt(i).match(/[aeiou]/)) {
             return i
         }
