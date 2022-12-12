@@ -133,9 +133,6 @@ describe("firstVowelIndex", () => {
 // If the value is a vowel, return the index number
 
 const firstVowelIndex = (string) => {
-    for (let i = 0; i < string.length; i++) {
-        if (string.charAt(i).match(/[aeiou]/)) {
-            return i
-        }
+    return (string.search(/[aeiou]/))
     }
-}
+
